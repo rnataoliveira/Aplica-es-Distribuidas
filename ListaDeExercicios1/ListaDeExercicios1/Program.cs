@@ -188,7 +188,37 @@ namespace ListaDeExercicios1
         public static void ExercicioNove()
         {
             Console.WriteLine("Exercício 09:");
+            Console.WriteLine("Quantos alunos deseja preencher com nome e nota?");
+            string quantidade = Console.ReadLine();
+            int quantidadeDeAlunos = int.Parse(quantidade);
+            double soma = 0;
+            double media = 0;
+            double[] notas;
+            notas = new double[quantidadeDeAlunos];
+            string[] alunos;
+            alunos = new string[quantidadeDeAlunos];
+            for (int i = 0; i < quantidadeDeAlunos; i++)
+            {
+                Console.WriteLine("Digite o nome do aluno: ");
+                string nomeDoAluno = Console.ReadLine();
+                Console.WriteLine("Digite a nota do aluno: ");
+                string nota = Console.ReadLine();
+                double notaDoAluno = double.Parse(nota);
 
+                notas[i] = notaDoAluno;
+                alunos[i] = nomeDoAluno;
+
+                soma += notaDoAluno;
+            }
+            media = soma / quantidadeDeAlunos;
+            for (int i = 0; i < quantidadeDeAlunos; i++)
+            {
+                if (notas[i] >= media)
+                {
+                    Console.WriteLine("Aluno: {0}", alunos[i]);
+                    Console.WriteLine("Nota: {0}", notas[i]);
+                }
+            }
         }
 
         public static void ExercicioDez()
