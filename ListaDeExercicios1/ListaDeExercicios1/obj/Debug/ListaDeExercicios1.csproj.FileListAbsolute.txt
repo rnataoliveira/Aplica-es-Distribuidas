@@ -1,0 +1,6 @@
+C:\Users\renat\dev\Desenvolvimento de Aplicações Distribuidas\Aula 01\Lista de Exercicios\ListaDeExercicios1\ListaDeExercicios1\bin\Debug\ListaDeExercicios1.exe.config
+C:\Users\renat\dev\Desenvolvimento de Aplicações Distribuidas\Aula 01\Lista de Exercicios\ListaDeExercicios1\ListaDeExercicios1\bin\Debug\ListaDeExercicios1.exe
+C:\Users\renat\dev\Desenvolvimento de Aplicações Distribuidas\Aula 01\Lista de Exercicios\ListaDeExercicios1\ListaDeExercicios1\bin\Debug\ListaDeExercicios1.pdb
+C:\Users\renat\dev\Desenvolvimento de Aplicações Distribuidas\Aula 01\Lista de Exercicios\ListaDeExercicios1\ListaDeExercicios1\obj\Debug\ListaDeExercicios1.csprojResolveAssemblyReference.cache
+C:\Users\renat\dev\Desenvolvimento de Aplicações Distribuidas\Aula 01\Lista de Exercicios\ListaDeExercicios1\ListaDeExercicios1\obj\Debug\ListaDeExercicios1.exe
+C:\Users\renat\dev\Desenvolvimento de Aplicações Distribuidas\Aula 01\Lista de Exercicios\ListaDeExercicios1\ListaDeExercicios1\obj\Debug\ListaDeExercicios1.pdb
