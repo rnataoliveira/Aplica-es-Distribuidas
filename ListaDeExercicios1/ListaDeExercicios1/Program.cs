@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -61,6 +62,18 @@ namespace ListaDeExercicios1
         {
             Console.WriteLine("Exercício 04:");
 
+            int x = 0;
+            Console.WriteLine("Digite um número: ");
+            x = int.Parse(Console.ReadLine());
+            int auxiliar = 0;
+            int sinal = -1;
+            for (int i = 1; i <= 20; i++)
+            {
+                sinal = sinal * -1;
+                auxiliar = auxiliar + sinal * x / i;
+            }
+            Console.WriteLine(auxiliar);
+            auxiliar = 0;
         }
 
         public static void ExercicioCinco()
@@ -125,8 +138,7 @@ namespace ListaDeExercicios1
                 }
                 else {
                     Console.WriteLine("Digite o valor da compra: ");
-                    string valor = Console.ReadLine();
-                    int valorCompra = int.Parse(valor);
+                    int valorCompra = int.Parse(Console.ReadLine());
                     if (opcao == "v")
                     {
                         aVista += valorCompra;
@@ -224,7 +236,7 @@ namespace ListaDeExercicios1
         public static void ExercicioDez()
         {
             Console.WriteLine("Exercício 10:");
-
+            
         }
 
         public static void mtdAplicacao(int opcao)
