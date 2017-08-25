@@ -236,7 +236,23 @@ namespace ListaDeExercicios1
         public static void ExercicioDez()
         {
             Console.WriteLine("Exercício 10:");
-            
+
+            List<double> lisSalarios = new List<double>();
+            Console.WriteLine("Digite cada salário e pressione a tecla 'enter';");
+            Console.WriteLine("Para encerrar as inserções digite -1 seguido de 'enter;'");
+            lisSalarios.Add(double.Parse(Console.ReadLine()));
+            while (lisSalarios[lisSalarios.Count - 1] != -1)
+            {
+                lisSalarios.Add(double.Parse(Console.ReadLine()));
+            }
+            Console.WriteLine("Inserção concluída, digite o reajuste e pressioine a tecla 'enter'");
+            double reajuste = double.Parse(Console.ReadLine());
+            Console.WriteLine();
+            for (int i = 0; i < lisSalarios.Count - 1; i++)
+            {
+                Console.WriteLine(i + 1 + "º salario reajustado: " + (lisSalarios[i] + reajuste));
+            }
+
         }
 
         public static void mtdAplicacao(int opcao)
