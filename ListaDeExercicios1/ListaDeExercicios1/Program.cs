@@ -62,18 +62,18 @@ namespace ListaDeExercicios1
         {
             Console.WriteLine("Exercício 04:");
 
-            int x = 0;
+           double x = 0;
             Console.WriteLine("Digite um número: ");
-            x = int.Parse(Console.ReadLine());
-            int auxiliar = 0;
+            x = double.Parse(Console.ReadLine());
+            double auxiliar = 0;
             int sinal = -1;
             for (int i = 1; i <= 20; i++)
             {
-                sinal = sinal * -1;
-                auxiliar = auxiliar + sinal * x / i;
+                sinal = sinal* -1;
+                auxiliar = auxiliar + sinal* x / i;
             }
             Console.WriteLine(auxiliar);
-            auxiliar = 0;
+            auxiliar = 0;                        
         }
 
         public static void ExercicioCinco()
