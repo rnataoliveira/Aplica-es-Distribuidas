@@ -27,7 +27,7 @@ namespace ListaDeExercicios1
         {
             Console.WriteLine("Exercício 01:");
             int soma = 0;
-            for (int i = 1; i < 100; i++)
+            for (int i = 1; i <= 100; i++)
             {
                 soma += i;
             }
@@ -37,7 +37,7 @@ namespace ListaDeExercicios1
         public static void ExercicioDois()
         {
             Console.WriteLine("Exercício 02:");
-            for (int i = 1; i < 200; i ++)
+            for (int i = 0; i < 200; i ++)
             {
                 if (i % 7 == 0)
                 {
@@ -49,7 +49,7 @@ namespace ListaDeExercicios1
         public static void ExercicioTres()
         {
             Console.WriteLine("Exercício 03:");
-            for (int i = 1; i < 100; i++)
+            for (int i = 0; i < 100; i++)
             {
                 if (i % 4 == 0)
                 {
@@ -157,7 +157,7 @@ namespace ListaDeExercicios1
 
         public static void ExercicioOito()
         {
-            List<int> notas = new List<int>();
+             List<int> notas = new List<int>();
             Console.WriteLine("Exercício 08:");
             Console.WriteLine("Digite sua nota e pressione enter para inserir a seguinte, para calcular digite -1.");
             int nota = int.Parse(Console.ReadLine());
@@ -172,11 +172,7 @@ namespace ListaDeExercicios1
             Console.WriteLine("Soma total = " + total);
             Console.WriteLine("Média = " + total / notas.Count);
 
-            var acimaDaMedia =
-                from valor in notas
-                where valor > (total / notas.Count)
-                select valor;
-
+            var acimaDaMedia = notas.Where(n => n > (total / notas.Count));
             Console.WriteLine("Notas acima da média: ");
             foreach (var item in acimaDaMedia)
             {
@@ -184,12 +180,7 @@ namespace ListaDeExercicios1
             }
 
             Console.WriteLine();
-
-            var abaixoDaMedia =
-                from valor in notas
-                where valor < (total / notas.Count)
-                select valor;
-
+            var abaixoDaMedia = notas.Where(n => n < (total / notas.Count));
             Console.Write("Notas abaixo da média: ");
             foreach (var item in abaixoDaMedia)
             {
